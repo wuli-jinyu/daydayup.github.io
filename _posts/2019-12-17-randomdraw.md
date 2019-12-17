@@ -10,10 +10,10 @@
 
 程序一开始先以只读模式打开txt文件，将参会成员名单读取到list中：
 ·
-file = open('学术组.txt','r')#以只读模式读取文件
+file = open('学术组.txt','r')
 lines1 = [ ]
 for i  in file:
-    lines1.append(i)#逐行将文本存入列表lines中
+    lines1.append(i)
 file.close( )
 ·
 
