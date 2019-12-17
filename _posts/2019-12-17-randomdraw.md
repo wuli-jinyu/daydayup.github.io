@@ -9,11 +9,8 @@
 会议成员分为两个组：学术组、应用组。各组专家的名单保存在C盘chouqian_code2文件夹中（导师只有一个C盘），保存形式为：学术组.txt、应用组.txt。
 
 程序一开始先以只读模式打开txt文件，将参会成员名单读取到list中：
-·
-file = open('学术组.txt','r')
+···file = open('学术组.txt','r')
 lines1 = [ ]
 for i  in file:
     lines1.append(i)
-file.close( )
-·
-
+file.close( )···
