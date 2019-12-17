@@ -35,8 +35,7 @@ while i< 50:#重新排序
 ## 生成用户界面
 python创建可视化界面的方法有好多。Tkinter是python的内置库，教程较多。PyQt据说比较方便（暂未试过），考虑到任务简单且时间较紧，选用tkinter。
 tkinter教程可参考：
-https://blog.csdn.net/qq_37482202/article/details/84201259
-https://www.jianshu.com/p/91844c5bca78
+https://blog.csdn.net/qq_37482202/article/details/84201259  https://www.jianshu.com/p/91844c5bca78
 
 
 
