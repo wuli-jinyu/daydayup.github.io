@@ -36,6 +36,45 @@ while i< 50:#重新排序
 python创建可视化界面的方法有好多。Tkinter是python的内置库，教程较多。PyQt据说比较方便（暂未试过），考虑到任务简单且时间较紧，选用tkinter。
 tkinter教程可参考：
 https://blog.csdn.net/qq_37482202/article/details/84201259  https://www.jianshu.com/p/91844c5bca78
+lambda表达式参考：
+http://blog.sina.com.cn/s/blog_ac9fdc0b0101n9u6.html
+```
+import tkinter as tk # 主窗口
+window = tk.Toplevel()
+window.title("评审专家抽签")   # 窗口标题
+window.geometry('1360x700')  # 窗口尺寸 
+canvas = tk.Canvas(window,width=1360,height=700,bg='white')
+image = Image.open('南航.bmp')
+im = ImageTk.PhotoImage(image)
+canvas.create_image(680,350,image=im)#设置背景
+canvas.pack()
 
+var = tk.StringVar()
+lab = tk.Label(window, textvariable=var, bg='green', font=('Arial', 35))
+lab.place(x=100,y=430,width=180,height=220)#设置标签，用于显示抽中的专家名字
+
+def tuchulai(btn):#设置按钮函数，点一次按钮，即在var中显示抽中的专家名字，并且在文本框中写入已经被抽过的所有专家的名字
+    global count#定义一个全局变量，用于计数
+    k = count
+    a = int(k)
+    a = a+1
+    var.set(list_new1[a])
+    Listbox.insert(k,list_new1[a])
+    k=str(a)
+    count = k
+    btn.config(text = k) #增加了这一句，更新button上的文本内容，将按钮的名字更新以记录抽取人员个数
+
+count = StringVar() #设置按钮
+count = '0' 
+botton = tk.Button(window,text = count,font=('宋体',20,'normal'),command = lambda:tuchulai(botton)) 
+botton.place(x=145,y=250,width=90,height=40)
+
+first = tk.Label(window,text='学术组',bg='red',font=('宋体',30,'normal'))#设置文本框listbox记录已选名单
+first.place(x=100,y=50,width=180,height=100)
+Listbox = tk.Listbox(window,bg = 'yellow',font=('宋体',21,'normal'))
+Listbox.place(x=400,y=50,width=180,height=600)
+
+window.mainloop() #显示界面语句
+```
 
 
