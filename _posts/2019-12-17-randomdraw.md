@@ -18,6 +18,7 @@ file.close( )
 ```
 然后用Python随机函数库random将列表lines中的元素打乱（洗牌），这里先新建了一个数字列表list1，将其打乱然后在另一列表list_new中把lines重新安装打乱后的list的数字编号进行重新排序。https://www.jianshu.com/p/b5e95d90e7a4 （random使用方法）
 ```
+import random
 list1 = []
 for t in range(50):
     list1.append(t)#生成从1到50的列表
@@ -29,3 +30,7 @@ while i< 50:#重新排序
     list_new1.append(lines1[j])
     i=i+1
 ```
+到这里只需要依次输出列表list_new的元素就可以实现参会人员的名字的抽签，这种算法较为简单，属于一次性抽完然后一个一个输出。
+
+## 生成界面
+
