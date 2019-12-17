@@ -34,10 +34,9 @@ while i< 50:#重新排序
 
 ## 生成用户界面
 python创建可视化界面的方法有好多。Tkinter是python的内置库，教程较多。PyQt据说比较方便（暂未试过），考虑到任务简单且时间较紧，选用tkinter。
-tkinter教程可参考：
+[tkinter教程可参考]
 https://blog.csdn.net/qq_37482202/article/details/84201259  https://www.jianshu.com/p/91844c5bca78
-lambda表达式参考：
-http://blog.sina.com.cn/s/blog_ac9fdc0b0101n9u6.html
+[lambda表达式参考]http://blog.sina.com.cn/s/blog_ac9fdc0b0101n9u6.html
 ```
 import tkinter as tk # 主窗口
 window = tk.Toplevel()
@@ -78,6 +77,7 @@ window.mainloop() #显示界面语句
 ```
 ## 打包py程序
 [利用Pyinstaller] https://blog.csdn.net/qq_24624539/article/details/88074501
+
 我安装的是anaconda，自带好多库，打包的时候会导致exe文件很大（打包了很多不必要的库），为了解决这个问题，试过单独建立一个虚拟环境(pipenv)，仅安装所需要的库进行安装，但是打包完反而更大了（取消虚拟环境只需删掉文件夹即可）。所以就直接另外单独安装了一个python3.8，在其根目录仅安装所需要的库，进行打包最后exe的大小仅为之前的十分之一。
 
 ## 待改进的点
