@@ -9,8 +9,11 @@
 会议成员分为两个组：学术组、应用组。各组专家的名单保存在C盘chouqian_code2文件夹中（导师只有一个C盘），保存形式为：学术组.txt、应用组.txt。
 
 程序一开始先以只读模式打开txt文件，将参会成员名单读取到lines中：
-```file = open('学术组.txt','r')#只读模式打开
+```
+file = open('C:\chouqian_code2\学术组.txt','r')#只读模式打开
 lines1 = [ ]
 for i  in file:
     lines1.append(i)
 file.close( )
+```
+然后用Python随机函数库random将列表lines中的元素打乱（洗牌）https://www.jianshu.com/p/b5e95d90e7a4
