@@ -10,5 +10,6 @@ pointwise画网格精度较高，上手快。
 Ctrl+right mouse|旋转
 Shift+right mouse|平移
 middle mouse|缩放
+Shift+middle mouse|局部放大和缩小
 
 
