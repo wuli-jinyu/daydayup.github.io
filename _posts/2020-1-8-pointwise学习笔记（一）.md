@@ -23,8 +23,8 @@ https://blog.csdn.net/weixin_38262871/article/details/77946253
 https://wenku.baidu.com/view/b1f376a855270722182ef7b3.html
 
 注意事项：
-1.先拉伸一次，然后将翼梢的网格补全，这是重点。然后将补全后的翼梢端的整个圆柱面再次拉伸。形成整个流场。
-2.补全翼梢时要注意分割，线条以及节点数目的划分，在分界处要进行融合处理
-3.最后设置求解器以及边界条件，再输出CAE文件.cas（选所有blocks，在pointwise中Database表示边界几何，connectors表示网格边线，domains表示二维网格，blocks表示三维网格）
+1. 先拉伸一次，然后将翼梢的网格补全，这是重点。然后将补全后的翼梢端的整个圆柱面再次拉伸。形成整个流场。
+2. 补全翼梢时要注意分割，线条以及节点数目的划分，在分界处要进行融合处理
+3. 最后设置求解器以及边界条件，再输出CAE文件.cas（选所有blocks，在pointwise中Database表示边界几何，connectors表示网格边线，domains表示二维网格，blocks表示三维网格）
 
 
